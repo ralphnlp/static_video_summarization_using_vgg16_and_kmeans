@@ -1,0 +1,5 @@
+## Introduction
+- Video summarization is the process of distilling a raw video into a more compact form without losing much information. In a general video summarization system, image features of video frames are extracted, and then the most representative frames are selected through analyzing the visual variations among visual features. Video summarization can be categorized into two forms: Static video summarization (keyframing) and Dynamic video summarization (video skimming).
+- Static video summaries are composed of a set of keyframes extracted from the original video, while dynamic video summaries are composed of a set of shots and are produced taking into account the similarity or domain-specific relationships among all video shots.
+- In this project, we will extract feature vectors from frames using a VGG16 model that has been pre-trained, and then cluster the feature vectors using the KMean approach. Finally, we megre the frames that are closest to each cluster to create a static video summary from the original movie.
+- Run demo: <b>python main.py input_video_path output_video_path</b>
